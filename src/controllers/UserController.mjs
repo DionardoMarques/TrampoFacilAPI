@@ -193,10 +193,10 @@ export default class UserController {
 			return;
 		}
 		user.phone = phone;
-		if (!type) {
-			res.status(422).json({ message: "The type is required" });
-			return;
-		}
+// 		if (!type) {
+// 			res.status(422).json({ message: "The type is required" });
+// 			return;
+// 		}
 		user.type = type;
 		if (password !== confirmpassword) {
 			res.status(422).json({
